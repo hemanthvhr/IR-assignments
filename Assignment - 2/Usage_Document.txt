@@ -1,0 +1,25 @@
+Hemanth Reddy Vennapusa
+15CS10051
+IR assignment 2
+Assuming python 2.7
+
+Usage document for the codes given - graphcons.py and evaluation.py
+
+these two files should be kept  in the Assignment2_IR directory or if kept somewhere else we have to change the paths refered to the data sets in the top of both these files
+
+To parse HTML data files given i have used a module called BeautifulSoup and also i have used rouge module for evaluating the rouge scores
+You can install these documents by typing the following commands
+	pip install BeautifulSoup
+	pip install rouge
+To run the code use the following commands
+	#for generating the candidate summaries for the Topic <topic_num>, it will be generated in the Summaries folder
+	python graphcons.py <topic_number>
+	#Ex - 
+	#python graphcons.py 1
+	#python graphcons.py 2
+	#python graphcons.py 3
+	#python graphcons.py 4
+	#python graphcons.py 5
+	#for evaluating the summaries
+	python evaluation.py > OutputScores.txt
+	#the scores will be stored in the OutputScores.txt file
