@@ -1,0 +1,14 @@
+Before using the commands it the containing folder should be as follows -
+	doc_vectors/
+	alldocs/
+	vectorize.py
+	update_query.py
+	output.txt
+	query.txt
+
+First we run the following command in the alldocs folder
+	perl -pi -e 's/\n/ /g' *
+	perl -pi -e 's/\r/ /g' *
+Then run 	
+	python vectorize.py	//it produces query vectors in query_vectors.txt and query documents for each document in doc_vectors/
+	python update_query.py	//it takes the query and document vectors and expands the query and keeps it in updated_query.txt
